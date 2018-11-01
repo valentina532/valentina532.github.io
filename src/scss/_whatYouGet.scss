@@ -1,0 +1,175 @@
+.whatYouGet {
+    background-color: #f4f4f4;
+
+
+    &_header {
+        margin: 0 auto;
+        font-family: $default_font;
+        font-weight: bold;
+        color: $violet;
+        font-size: 2.5em;
+
+        text-align: center;
+        padding: 40px 20px;
+    }
+}
+
+.whatYouGetBlock {
+    padding-right: 15px;
+    
+    &_img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+    }
+
+    &_header {
+        text-align: center;
+
+    }
+
+    &_text {
+        text-align: center;
+        font-family: $default_font;
+        font-weight: 500;
+        color: #969ea5;
+        line-height: 1.25em;
+
+        font-size: 0.875em;
+        padding-bottom: 30px;
+    }
+}
+
+.sublime_img {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+    overflow: hidden;
+
+}
+
+
+
+@media only screen and (min-width: 401px) and (max-width: 480px) {
+
+    .whatYouGetBlock {
+        &_img {
+            float: left;
+            margin-left: 20px;
+            width: 71px;
+        }
+    }
+
+    .whatYouGetBlock_info {
+        overflow: hidden;
+        padding-left: 30px;
+    }
+
+    .whatYouGetBlock_header {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .whatYouGetBlock_text {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 992px) {
+
+    .whatYouGetBlock {
+        &_img {
+            float: left;
+            margin-left: 30px;
+            margin-bottom: 0;
+            width: 71px;
+        }
+    }
+
+    .whatYouGetBlock_info {
+        overflow: hidden;
+        padding-left: 40px;
+    }
+
+    .whatYouGetBlock_header {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .whatYouGetBlock_text {
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .whatYouGet {
+        padding-top: 50px;
+        overflow: hidden;
+        position: relative;
+        height: 650px;
+
+
+
+    }
+
+    .whatYouGet_header {
+        float: right;
+        padding: 0;
+        margin-right: 25px;
+        font-size: 2.5em;
+    }
+
+    .whatYouGetBlock {
+        width: 44%;
+
+
+
+        &_img {
+            float: left;
+            margin-left: 30px;
+            width: 71px;
+        }
+    }
+
+    .whatYouGetBlock_info {
+        overflow: hidden;
+        padding-left: 25px;
+
+    }
+
+    .whatYouGetBlock_header {
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .whatYouGetBlock_text {
+        text-align: left;
+        padding-bottom: 20px;
+
+    }
+
+    // .sublime_img {
+    //     width: 55vw;
+    //     height: 40vw;
+    //     position: relative;
+    //     bottom: 560px;
+    //     left: 50%;
+    //     margin-left: 10px;
+    // }
+
+
+    .sublime_img {
+        width: 60vw;
+        height: 40vw;
+        position: relative;
+        bottom: 500px;
+
+        left: 50%;
+        margin-left: 10px;
+
+
+    }
+
+}

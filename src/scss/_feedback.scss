@@ -1,0 +1,369 @@
+.feedbackBlock {
+    background-color: #ffffff;
+    font-family: $default_font;
+
+    .carousel {
+        margin: 0 auto;
+        padding-top: 60px;
+        width: 80%;
+    }
+
+    .user {
+        &__img {
+            border-radius: 50%;
+        }
+
+        &__personname {
+            display: block;
+            font-family: $default_font;
+            font-size: 24px;
+            font-weight: bold;
+            color: #635c73;
+            
+        }
+
+        &__nickname {
+            font-family: $default_font;
+            color: $violet;
+            font-size: 16px;
+        }
+
+        &__feedback {
+            text-align: center;
+            font-family: $second_font;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 1.4;
+            color: #333333;
+            width: 70%;
+        }
+    }
+}
+
+a {
+    color: $violet;
+}
+
+.followUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid #f4f4f4;
+    padding-top: 60px;
+    padding-bottom: 30px;
+
+    &__btn {
+        height: 50px;
+        width: 240px;
+        border-radius: 3px;
+        border: none;
+        margin: 0 20px;
+        text-align: left;
+        cursor: pointer;
+    }
+
+    &__text {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    &_theme_git {
+        background-color: #f3f3f3;
+
+        &:hover {
+            background-color: #2b414d;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+    }
+
+    &_theme_twitter {
+        background-color: #26a6d1;
+        color: #ffffff;
+
+        &:hover {
+            background-color: #fff;
+            color: #26a6d1;
+            border: 1px solid #26a6d1;
+        }
+    }
+
+    &_theme_fb {
+        background-color: #3b5998;
+        color: #ffffff;
+
+        &:hover {
+            background-color: #fff;
+            color: #3b5998;
+            border: 1px solid #3b5998;
+        }
+    }
+
+    &__block {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+}
+
+.fab {
+    font-size: 20px;
+    padding: 0 20px 0 20px;
+}
+
+.counter {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 14px;
+    color: #848e97;
+    font-weight: normal;
+}
+
+/* *Subscribe section */
+.subscribe_section {
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__header {
+        font-size: 24px;
+        font-weight: 500;
+        padding: 33px 20px 35px 20px;
+
+        &-subscribe {
+            display: block;
+        }
+
+        &-callback {
+            display: none;
+        }
+    }
+}
+
+.form {
+    width: 100%;
+    text-align: center;
+
+    &__input {
+        width: 85%;
+        border-radius: 20px;
+        border: none;
+        padding: 12px;
+        margin-bottom: 15px;
+        color: $main_color;
+
+        &:focus {
+            outline: none;
+        }
+
+        &-email {
+            display: none;
+        }
+
+        &-name {
+            display: inline-block;
+        }
+
+        &-phone {
+            display: inline-block;
+        }
+    }
+
+
+    &__submit {
+        margin: 19px 0 42px 0;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 13px;
+
+
+        &-callme {
+            display: none;
+        }
+
+        &-subscribe {
+            display: inline-block;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .subscribe {
+        flex-direction: column;
+    }
+
+    .user {
+       &__img {
+           margin-left: 25px;
+           
+
+       }
+
+        &__personname {
+            text-align: center;
+
+
+        }
+
+    }
+}
+
+
+
+@media only screen and (min-width: 401px) and (max-width: 480px) {
+
+    .subscribe {
+        display: block;
+    }
+
+    .form__input {
+        width: 50%;
+
+        &-name {
+            display: none;
+        }
+
+        &-phone {
+            display: none;
+        }
+
+        &-email {
+            display: inline-block;
+        }
+    }
+
+    .form__submit {
+        width: 35%;
+        margin-left: 10px;
+
+    }
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 992px) {
+    .subscribe {
+        display: block;
+        text-align: center;
+
+    }
+
+    .subscribe__header {
+        &-subscribe {
+            display: none;
+        }
+
+        &-callback {
+            display: inline-block;
+            width: 80%;
+            color: $violet;
+        }
+    }
+
+    .form {
+        text-align: center;
+
+        &__input {
+            width: 45%;
+
+            &-name {
+                display: inline-block;
+                // float: left;
+                margin-right: 15px;
+            }
+
+            &-phone {
+                display: inline-block;
+            }
+
+            &-email {
+                display: none;
+            }
+        }
+    }
+
+
+    .form__submit {
+        margin-left: 9px;
+
+        &-subscribe {
+            display: none;
+        }
+
+        &-callme {
+            display: inline-block;
+        }
+    }
+}
+
+
+
+@media only screen and (min-width: 993px) {
+    .subscribe {
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+    }
+
+    .form {
+        width: 70%;
+        margin-top: 25px;
+
+        &__input {
+            width: auto;
+            margin-left: 10px;
+        }
+
+        &__submit {
+            margin-left: 9px;
+
+            &-subscribe {
+                display: none;
+            }
+
+            &-callme {
+                display: inline-block;
+            }
+        }
+    }
+
+
+    .subscribe__header {
+        &-subscribe {
+            display: none;
+        }
+
+        &-callback {
+            display: inline-block;
+            color: $violet;
+
+        }
+    }
+}
+
+@media only screen and (min-width: 481px) {
+
+    .user {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+
+        &__img {
+            margin-right: 25px;
+        }
+
+        &__personname {
+            margin-top: 40px;
+        }
+    }
+}
