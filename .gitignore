@@ -1,9 +1,0 @@
-# dependencies
-/node_modules
-/.idea
-
-# testing
-/coverage
-
-# Gulp install instructions.txt
-
